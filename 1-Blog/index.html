@@ -4,37 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Мой блог</title>
 </head>
 
 <body>
     <header>
-        <a href="/"><span>B</span> Мой блог</a>
+        <a class="top_logo" href="/"><span>B</span> Мой блог</a>
         <nav>
-            <ul>
+            <ul class="top_nav">
                 <li><a href="#">HTML и CSS</a></li>
                 <li><a href="#">Frontend</a></li>
                 <li><a href="#">Backend</a></li>
             </ul>
         </nav>
 
-        <div><img src="./images/search.png" alt="Поиск">Поиск</div>
+        <div class="search_block">
+            <form action="/search" method="get" class="search_form">
+                <input type="text" name="search" class="search" placeholder="Поиск">
+                <input type="submit" class="search_submit">
+            </form>
+        </div>
+
 
     </header>
 
     <main>
         <article>
 
-            <p>FRONTEND <img src="./images/date_divider.png" alt="Разделитель"> 12 мая 2024</p>
+            <p class="article_date">FRONTEND <img src="./images/date_divider.png" alt="Разделитель"> 12 мая 2024</p>
 
             <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
 
-            <div><img src="./images/girl_pict.png" alt="Фото разработчика"> Наталья Васильева
-                <br><span>Разработчик</span>
+            <div class="developer"><img src="./images/girl_pict.png" alt="Фото разработчика"> Наталья Васильева
+                <br><span class="position">Разработчик</span>
             </div>
-            <div><img src="./images/middle_img.png" alt=""></div>
+            <div class="article_pict"><img src="./images/middle_img.png" alt=""></div>
 
-            <p>Теория цвета — это особенности эмоционального восприятия человеком тех или иных цветовых решений. Цвета и
+            <p class="bigger_text">Теория цвета — это особенности эмоционального восприятия человеком тех или иных
+                цветовых решений. Цвета и
                 различные их
                 комбинации влияют на психику человека, а значит, во многом определяют его поведение. Маркетологи и
                 веб-дизайнеры
